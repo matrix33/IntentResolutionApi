@@ -1,0 +1,6 @@
+suggest a flight from <START:city> Denver <END> to <START:city> Detroit <END>
+show me some flights from <START:city> boston <END> to <START:city> miami <END>
+let me know some flights from <START:city> boston <END> to <START:city> miami <END>
+Could you please give me the details of some flights from <START:city> boston <END> to <START:city> miami <END>
+Could I please get the details of some flights from <START:city> boston <END> to <START:city> miami <END>
+May I please get the details of some flights from <START:city> boston <END> to <START:city> miami <END>?

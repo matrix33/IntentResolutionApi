@@ -1,0 +1,3 @@
+is there any flight available from <START:city> Denver <END> to <START:city> Detroit <END>
+is there any flight available from <START:city> Denver <END> to <START:city> Detroit <END> today
+is there any flight available from <START:city> Denver <END> to <START:city> Detroit <END> tomorrow
