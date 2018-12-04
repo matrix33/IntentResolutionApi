@@ -1,4 +1,5 @@
-Show me some flights from <START:city> Denver <END> airport
-let me know a flight from <START:city> Denver <END> airport
-Show me some flights from <START:city> Denver <END>
-Give me some flights from <START:city> Denver <END>
+flight from <START:city> Denver <END> on <START:datetime> monday <END>
+flight from <START:city> Denver <END> on <START:datetime> 24th December <END>
+on <START:datetime> monday <END> flight from <START:city> Denver <END>
+on <START:datetime> 24th December <END> flight from <START:city> Denver <END>
+flight from <START:city> Denver <END> on <START:datetime> 5th December 2018 <END>

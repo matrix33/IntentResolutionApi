@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.delta.nlp</groupId>
+	<groupId>com.poc.nlp</groupId>
 	<artifactId>IntentResolutionApi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -41,6 +41,12 @@
             <artifactId>opennlp-tools</artifactId>
             <version>1.8.4</version>
         </dependency>
+        
+		<dependency>
+		    <groupId>commons-lang</groupId>
+		    <artifactId>commons-lang</artifactId>
+		    <version>2.6</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -51,6 +57,7 @@
 			</plugin>
 		</plugins>
 	</build>
+	
 
 
 </project>
