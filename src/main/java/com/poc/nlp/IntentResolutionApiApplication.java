@@ -59,7 +59,7 @@ public class IntentResolutionApiApplication  implements CommandLineRunner {
     
     public static void train(String jarPath)  throws Exception{
     	
-    	String[] args1= {jarPath.trim()+File.separator+"train-flight","something"};
+    	String[] args1= {jarPath.trim()+File.separator+"training","something"};
     	System.out.println("jarPath : "+jarPath);
     	System.out.println("training dir : "+args1[0]);
     	//URL url = IntentResolutionApiApplication.class.getResource("test.txt");

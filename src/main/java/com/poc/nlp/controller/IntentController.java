@@ -69,7 +69,7 @@ public class IntentController {
 		FileWriter fw = null;
 		try {
 			String jarPath = IntentResolutionApiApplication.class.getProtectionDomain().getCodeSource().getLocation().getPath();
-			File trainingDirectory =  new File(jarPath.trim()+File.separator+"train-flight");
+			File trainingDirectory =  new File(jarPath.trim()+File.separator+"training");
 			System.out.println("trainingDirectory :: "+trainingDirectory);
 			Boolean flag=false;
 			if (!trainingDirectory.isDirectory()) {
@@ -124,7 +124,7 @@ public class IntentController {
 		try {
 			String jarPath = IntentResolutionApiApplication.class.getProtectionDomain().getCodeSource().getLocation().getPath();
 			System.out.println(intentBean);
-			File trainingDirectory =  new File(jarPath.trim()+File.separator+"train-flight");
+			File trainingDirectory =  new File(jarPath.trim()+File.separator+"training");
 			System.out.println("trainingDirectory :: "+trainingDirectory);
 			Boolean flag=false;
 			if (!trainingDirectory.isDirectory()) {
@@ -184,7 +184,7 @@ public class IntentController {
 	        System.out.println("prepList :: null");
 	        //////////////////////////
 	        String jarPath = IntentResolutionApiApplication.class.getProtectionDomain().getCodeSource().getLocation().getPath();
-			String trainingDirectoryPath =  jarPath.trim()+File.separator+"train-flight";
+			String trainingDirectoryPath =  jarPath.trim()+File.separator+"training";
 	        File trainingFile = new File(trainingDirectoryPath+File.separator+intent.getName()+".txt");
 	        
 	        
@@ -209,12 +209,12 @@ public class IntentController {
 	       // List<Annotation> annotations = ner.find(tokenizerDictionary.tokenize(textInput));
 	      //  System.out.println(annotations.size());
 	        Map<String,List<String>> dictionaryWordsMap = new HashMap<>();
-	        System.out.println("tokenDicts :: "+Arrays.toString(tokenDicts) +" :: "+IntentResolutionApiApplication.dictionaryMap.size());
+	       /* System.out.println("tokenDicts :: "+Arrays.toString(tokenDicts) +" :: "+IntentResolutionApiApplication.dictionaryMap.size());*/
 	        for (String tokenDict : tokenDicts) {
 	            for(Map.Entry<String, List<String>> entry:IntentResolutionApiApplication.dictionaryMap.entrySet())
 	            {
-	            	System.out.println("entry :: "+entry.getKey());
-	            	System.out.println("value :: "+entry.getValue());
+	            	/*System.out.println("entry :: "+entry.getKey());
+	            	System.out.println("value :: "+entry.getValue());*/
 	            	if(entry.getValue().contains(tokenDict))
 	            	{
 	            		System.out.println("contains :: "+entry.getKey());
@@ -324,7 +324,7 @@ public class IntentController {
 		List<String> intentList = new ArrayList<>();
 		try {
 		String jarPath = IntentResolutionApiApplication.class.getProtectionDomain().getCodeSource().getLocation().getPath();
-		File trainingDirectory =  new File(jarPath.trim()+File.separator+"train-flight");
+		File trainingDirectory =  new File(jarPath.trim()+File.separator+"training");
 		System.out.println("trainingDirectory :: "+trainingDirectory);
 		Boolean flag=false;
 		if (!trainingDirectory.isDirectory()) {

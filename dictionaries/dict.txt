@@ -1,3 +1,4 @@
 portfolio=crew,techops
 reportType=status,quality
 city=delhi,kolkata,mumbai,hyderabad
+direction=left,right

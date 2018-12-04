@@ -1,0 +1,2 @@
+turn <START:direction> right <END>
+turn <START:direction> left <END> from <START:location> saltlake <END>
