@@ -87,6 +87,7 @@ public class IntentResolutionApiApplication  implements CommandLineRunner {
         TrainingParameters trainingParams = new TrainingParameters();
         trainingParams.put(TrainingParameters.ITERATIONS_PARAM, 10);
         trainingParams.put(TrainingParameters.CUTOFF_PARAM, 0);
+        trainingParams.put(TrainingParameters.THREADS_PARAM, 5);
 
         DoccatModel doccatModel = DocumentCategorizerME.train("en", combinedDocumentSampleStream, trainingParams, new DoccatFactory());
         combinedDocumentSampleStream.close();

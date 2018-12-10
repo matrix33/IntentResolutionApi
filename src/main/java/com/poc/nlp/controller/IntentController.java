@@ -387,14 +387,12 @@ public class IntentController {
 	      POSModel model = new POSModel(inputStream); 
 	      POSTaggerME tagger = new POSTaggerME(model); 
 	      String[] tags = tagger.tag(tokens);
+	      ArrayList<String> removeTags = new ArrayList<>(
+	    	        List.of("CC","IN","TO","RB","RBR","RBS","RP","UH","WDT","WP","WP$","WRB","PRP","PRP$","WRB"));
 	      for (int i = 0; i < tokens.length; i++) {
                 String word = tokens[i].trim();
                 String tag = tags[i].trim();
-                if(tag.equalsIgnoreCase("CC") || tag.equalsIgnoreCase("IN") || tag.equalsIgnoreCase("TO") 
-                		|| tag.equalsIgnoreCase("RB")|| tag.equalsIgnoreCase("RBR")|| tag.equalsIgnoreCase("RBS")
-                		|| tag.equalsIgnoreCase("RP")|| tag.equalsIgnoreCase("UH")|| tag.equalsIgnoreCase("WDT")
-                		|| tag.equalsIgnoreCase("WP")|| tag.equalsIgnoreCase("WP$")|| tag.equalsIgnoreCase("WRB")
-                		|| tag.equalsIgnoreCase("PRP")|| tag.equalsIgnoreCase("PRP$")|| tag.equalsIgnoreCase("WRB"))
+                if(removeTags.contains(tag))
                 {
                 	prepList.add(word);
                 }
